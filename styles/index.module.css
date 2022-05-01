@@ -1,0 +1,388 @@
+.selectionColor {
+	color: var(--primary);
+}
+
+/* header */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+
+	height: 84px;
+
+	color: var(--black);
+
+	font-family: var(--font-main);
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.logo {
+	width: 99px;
+	height: 45px;
+	margin-left: 20px;
+
+	background-image: url("../public/index/logo.svg");
+}
+
+.menu {
+	display: flex;
+	align-content: center;
+	align-items: center;
+
+	margin-right: 20px;
+}
+
+.menulink {
+	padding-right: 20px;
+}
+
+.menuico {
+	padding: 0 10px;
+}
+
+.menulink:hover {
+	color: var(--primary);
+}
+
+.twitter {
+	width: 30.36px;
+	height: 25px;
+
+	background-image: url("../public/index/twitter.svg");
+}
+
+.discord {
+	width: 32.14px;
+	height: 25px;
+
+	background-image: url("../public/index/discord.svg");
+}
+
+.twitter:hover,
+.discord:hover {
+	box-shadow: 0 32px 48px rgb(122 118 255 / 36%);
+}
+
+/* General screen */
+
+.mainScreen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 610px;
+}
+
+.mainScreenBack {
+	position: absolute;
+	left: 0;
+
+	width: 244px;
+	height: 469.61px;
+
+	background-image: url("../public/index/fon-main-back.webp");
+}
+
+.mainScreenTitle {
+	max-width: 560px;
+	margin-bottom: 20px;
+
+	font-family: var(--font-main);
+	font-size: 40px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 54px;
+}
+
+.mainScreenDescription {
+	max-width: 419px;
+	margin-bottom: 25px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.mainScreenLeft {
+	z-index: 100;
+}
+
+.mainScreenRight {
+	width: 552px;
+	height: 415px;
+
+	background: url("../public/index/main-1.svg");
+}
+
+/* About */
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 500px;
+}
+
+.aboutLeft {
+	max-width: 569px;
+}
+
+.h2 {
+	font-family: var(--font-main);
+	font-size: 36px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 36px;
+}
+
+.description {
+	margin-bottom: 35px;
+
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 28px;
+}
+
+.aboutRight {
+	position: relative;
+
+	display: flex;
+	align-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+
+	width: 500px;
+
+	height: 500px;
+}
+
+.outerRing {
+	position: absolute;
+	left: calc(50% - 150px);
+
+	width: 300px;
+	height: 300px;
+
+	animation-name: rotate;
+
+	/*  Rotate  */
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+
+	border-radius: 50%;
+	background-image: linear-gradient(180deg, #C476FF67 0%, #C376FF 100%);
+}
+
+.innerRing {
+	position: absolute;
+	left: calc(50% - 145px);
+
+	width: 290px;
+	height: 290px;
+
+	border-radius: 50%;
+	background-image: linear-gradient(0deg, #FFF, #FFF);
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.aboutIco {
+	position: absolute;
+	z-index: 1000;
+
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 189px;
+	height: 209px;
+}
+
+.aboutIco p {
+	text-align: center;
+
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 22px;
+}
+
+.aboutIcoCicle {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+
+	width: 140px;
+	height: 140px;
+
+	border-radius: 50%;
+
+	background-color: #FFF;
+	box-shadow: 0 24px 48px rgb(217 225 236 / 35%);
+}
+
+.aboutIcoCicle h2 {
+	font-size: 40px;
+}
+
+.aboutImgTop {
+	top: 8%;
+	left: 30%;
+}
+
+.aboutImgRight {
+	top: 60%;
+	right: 10%;
+}
+
+.aboutImgLeft {
+	top: 60%;
+	left: 10%;
+}
+
+/* whom */
+
+/* .whom {
+	width: 100%;
+	height: 1441px;
+} */
+
+/* Tablet */
+@media (max-width: 768px) {
+	.menulink {
+		display: none;
+	}
+
+	.mainScreen {
+		flex-direction: column;
+		justify-content: flex-start;
+
+		height: 100vh;
+	}
+
+	.mainScreenTitle {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.mainScreenLeft {
+		margin-left: 20px;
+	}
+
+	.mainScreenRight {
+		width: 100%;
+		margin-top: -150px;
+	}
+}
+
+@media (max-width: 1090px) {
+	.about {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+
+		height: 900px;
+	}
+
+	.aboutLeft {
+		display: flex;
+		align-content: center;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		width: 100%;
+		height: 500px;
+	}
+
+	.outerRing {
+		right: 0;
+		left: 0;
+
+		margin-right: auto;
+		margin-left: auto;
+
+		text-align: center;
+	}
+
+	.innerRing {
+		right: 0;
+		left: 0;
+
+		margin-right: auto;
+		margin-left: auto;
+
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.about {
+		margin-top: 50px;
+	}
+
+	.h2 {
+		margin-bottom: 20px;
+	}
+
+	.description {
+		max-width: 80%;
+
+		text-align: center;
+	}
+
+	.aboutRight {
+		width: 100%;
+		height: 500px;
+	}
+
+	.aboutIco p {
+		width: 150px;
+
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.aboutImgTop {
+		top: 0;
+		right: 0;
+		left: 0;
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.aboutImgRight {
+		top: 215px;
+		right: 0%;
+	}
+
+	.aboutImgLeft {
+		top: 215px;
+		left: 0%;
+	}
+}
+
+@media (max-width: 360px) {
+	.aboutIco p {
+		width: 120px;
+
+		font-size: 11px;
+		line-height: 18px;
+	}
+}

@@ -1,0 +1,104 @@
+@import "./fonts.css";
+
+html,
+body {
+	overflow-x: hidden;
+
+	margin: 0;
+	padding: 0;
+
+	color: var(--black);
+	background: white;
+
+	font-family: "Open Sans", sans-serif;
+
+	scroll-behavior: smooth;
+
+	scrollbar-arrow-color: #7A76FF; /* Цвет стрелок */
+
+	scrollbar-base-color: #FFF; /* Цвет полосы прокрутки */
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+
+	background: #FFF;
+}
+::-webkit-scrollbar-thumb { background: #7A76FF; }
+
+button {
+	padding: 0;
+
+	cursor: pointer;
+
+	color: inherit;
+	border: none;
+	background-color: transparent;
+
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--black: #272443;
+	--gray-light: #EBEBEB;
+	--white: white;
+	--primary: #7A76FF;
+	--primary-hover: #6344DF;
+	--red: #FC836D;
+	--green: #1DC37E;
+	--green-light: #C8F8E4;
+	--font-family: "Open Sans", sans-serif;
+	--font-main: "Geometric Sans Serif", sans-serif;
+}
+
+.MuiDialogTitle-root {
+	color: white !important;
+	background: #7A76FF !important;
+
+	font-family: var(--font-main) !important;
+}
+
+.MuiDialog-paper {
+	border-radius: 10px !important;
+	background: #7A76FF !important;
+}
+
+.MuiIconButton-root {
+	color: white !important;
+}
+
+.MuiList-root {
+	background: #F6F6FB !important;
+}
+
+.MuiButton-root {
+	font-family: var(--font-family) !important;
+}
+
+.MuiSvgIcon-root {
+	color: #F6F6FB !important;
+}
+
+.MuiDialogContent-root .MuiListItem-root .MuiSvgIcon-root {
+	color: #7A76FF !important;
+}
+
+.MuiAlert-standardSuccess {
+	color: white !important;
+	background: #7A76FF !important;
+}
+
+.MuiAlert-standardError {
+	color: white !important;
+	background: #FF5D4E !important;
+}

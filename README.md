@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+If you want to quickly run an NFT mint page on Solana using Candy Machine V2.
 
-## Available Scripts
+For instructions on how to set up a Candy Machine V2, please refer to Metaplex's documentation [here](https://docs.metaplex.com/candy-machine-v2/Introduction)
 
-In the project directory, you can run:
+### Watch this video to see how it works
 
-### `npm start`
+Click on the picture to see a video of how it works
+[![how it works](https://i.ibb.co/Xz4PG6B/2022-05-02-01-53-26.png)](https://youtu.be/kfab_pcW34A)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## If this helped you, I would be happy to donate to Solana wallet.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`6TUFirgxGnijusqo3K3b4BUdkqz3HXFJC8527LJofbU9`
 
-### `npm test`
+# How to install?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## One-Click Vercel Deployment
 
-### `npm run build`
+One-click solution to clone this project to your GitHub and deploy the prod package on a Vercel.
+Your only task will be to customize your GitHub fork of this project and commit updates.
+Vercel will automatically deploy new prod packages for each new commit.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 1. Fork the project & clone it. Example:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone 
+```
 
-### `npm run eject`
+#### 2. Define your environment variables (.env file)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+NEXT_PUBLIC_PAGE_TITLE — Page header in the browser
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+NEXT_PUBLIC_COLLECTION_NAME — The name of your collection
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+NEXT_PUBLIC_COLLECTION_DESCRIPTION — Description of your collection
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+NEXT_PUBLIC_COLLECTION_IMAGE — Example of an NFT image uploaded to public/toEdit
 
-## Learn More
+NEXT_PUBLIC_CANDY_MACHINE_ID — The address of your Candy Machine V2
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+NEXT_PUBLIC_SOLANA_NETWORK — In which network to run the mint
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+NEXT_PUBLIC_RPC_URL — RPC URL, the default is https://metaplex.devnet.rpcpool.com/, I recommend buying NODE to run it. I recommend [this](https://hackmd.io/@levicook/HJcDneEWF).
+
+NEXT_PUBLIC_BACKGROUND_COLOR — Background Color
+
+#### 3. Setting up wallets
+
+In the wallets/wallets.ts folder, uncomment the wallets you need.
+
+#### 4. Project Launch
+
+Set the dependencies
+```
+npm install
+```
+
+Start building the project
+```
+npm run build
+```
+
+Start the project and testing
+```
+npm run start
+```
+
+# Need help?
+Message me on [Telegram](https://t.me/a_chmerev)
