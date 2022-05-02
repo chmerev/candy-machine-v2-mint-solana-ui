@@ -21,7 +21,7 @@ One-click solution to clone this project to your GitHub and deploy the prod pack
 Your only task will be to customize your GitHub fork of this project and commit updates.
 Vercel will automatically deploy new prod packages for each new commit.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFulgurus%2Fcandy-machine-v2-responsive-ui)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchmerev%2Fcandy-machine-v2-mint-solana-ui.git&env=NEXT_PUBLIC_PAGE_TITLE,NEXT_PUBLIC_COLLECTION_NAME,NEXT_PUBLIC_COLLECTION_DESCRIPTION,NEXT_PUBLIC_COLLECTION_IMAGE,NEXT_PUBLIC_CANDY_MACHINE_ID,NEXT_PUBLIC_SOLANA_NETWORK,NEXT_PUBLIC_RPC_URL,NEXT_PUBLIC_BACKGROUND_COLOR&project-name=candy-machine-v2-mint-solana-ui)
 
 ### Installation
 
