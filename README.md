@@ -43,7 +43,7 @@ NEXT_PUBLIC_COLLECTION_IMAGE — Example of an NFT image uploaded to public/toEd
 
 NEXT_PUBLIC_CANDY_MACHINE_ID — The address of your Candy Machine V2
 
-NEXT_PUBLIC_SOLANA_NETWORK — In which network to run the mint
+NEXT_PUBLIC_SOLANA_NETWORK — In which network to run the mint. 'devnet' | 'mainnet-beta' | 'testnet'.
 
 NEXT_PUBLIC_RPC_URL — RPC URL, the default is https://metaplex.devnet.rpcpool.com/, I recommend buying NODE to run it. I recommend [this](https://hackmd.io/@levicook/HJcDneEWF).
 
